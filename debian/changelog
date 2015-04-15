@@ -1,3 +1,13 @@
+broadcom-sta (6.30.223.248-3blankon2) tambora; urgency=medium
+
+  * Added patch to support Linux 4.0
+    - repair-make-warnings.patch:  Fixed make warnings
+      Credit for the patch goes to Krzysztof Kolasa.
+    - linux-4.0-support.patch: Add support for Linux 4.0
+      Credit for the patch goes to Krzysztof Kolasa.
+
+ -- Mahyuddin <yudi.al@gmail.com>  Wed, 15 Apr 2015 11:40:54 +0700
+
 broadcom-sta (6.30.223.248-3blankon1) tambora; urgency=medium
 
   * Added Patch support >= linux-3.18:

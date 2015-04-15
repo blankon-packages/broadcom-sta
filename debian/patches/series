@@ -10,3 +10,5 @@
 09-fix_system_hang_when_deleting_monitor.patch
 linux-3.18-support.patch
 linux-3.18-null-pointer-crash.patch
+repair-make-warnings.patch
+linux-4.0-support.patch
