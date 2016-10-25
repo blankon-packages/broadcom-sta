@@ -3,12 +3,8 @@
 02-license.patch
 03-rename-to-wlan0.patch
 04-user_ioctl.patch
-05-kernel-3.15.0.patch
-06-kernel-3.17.0.patch
-07-fix_procfs_handling.patch
-08-enable_error_traces.patch
-09-fix_system_hang_when_deleting_monitor.patch
-linux-3.18-support.patch
-linux-3.18-null-pointer-crash.patch
-repair-make-warnings.patch
-linux-4.0-support.patch
+05-remove-time-and-date-macros.patch
+13-broadcom-sta-6.30.223.248-linux-3.18-null-pointer-crash.patch
+14-rdtscl.patch
+15-linux47.patch
+16-linux48.patch

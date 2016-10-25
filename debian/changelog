@@ -1,3 +1,90 @@
+broadcom-sta (6.30.223.271-4blankon1) tambora; urgency=medium
+
+  * Merge whit sid 
+
+ -- Rahman Yusri Aftian <aftian@blankon.id>  Tue, 25 Oct 2016 08:56:03 +0700
+
+broadcom-sta (6.30.223.271-4) unstable; urgency=medium
+
+  * Added patch from Koos Vriezen to work around kernel crash with version
+    4.8+ (THANKS!) (closes: #839629)
+  * Experimental inclusion of AppStream metadata (closes: #838735)
+  * Standards update (no changes required)
+
+ -- Eduard Bloch <blade@debian.org>  Tue, 04 Oct 2016 23:25:35 +0200
+
+broadcom-sta (6.30.223.271-3) unstable; urgency=low
+
+  * Added patch to support kernel 4.7 changes, based on
+    https://github.com/archlinuxcn/repo/blob/f4d6cff1cacf8dad13006fade5f96bc2cf020a9b/broadcom-wl-dkms/003-linux47.patch
+    with minor modifications (closes: #829363)
+
+ -- Eduard Bloch <blade@debian.org>  Sun, 03 Jul 2016 00:42:10 +0200
+
+broadcom-sta (6.30.223.271-2) unstable; urgency=low
+
+  * Added 14-rdtscl.patch (closes: #808954), originally 002-rdtscl.patch from
+    https://aur.archlinux.org/cgit/aur.git/snapshot/broadcom-wl-dkms.tar.gz
+  * Added device id for Lenovo Yoga 3 (closes: 791672)
+  * More explanation about mutually exclusive build systems in the package
+    description (closes: #787091)
+  * changed the relation between -dkms and others to simple conflict with the
+    local binary packages
+
+ -- Eduard Bloch <blade@debian.org>  Fri, 25 Dec 2015 19:15:22 +0100
+
+broadcom-sta (6.30.223.271-1) unstable; urgency=low
+
+  * New upstream release (Closes: #800880).
+  * Dropped applied upstream patches (also thanks to Rafael Cunha de Almeida):
+    - 09-fix_system_hang_when_deleting_monitor.patch
+    - 06-kernel-3.17.0.patch
+    - 08-enable_error_traces.patch (stop deviating from upstream)
+    - 10-0015-add-support-for-Linux-3.18.patch
+    - 11-0016-repair-make-warnings.patch
+    - 12-0017-add-support-for-Linux-4.0.patch
+    - 14-0018-cfg80211_disconnected.patch
+  * Adopted (Raphael):
+    - 05-kernel-3.15.0.patch
+    - 07-fix_procfs_handling.patch
+  * Refreshed: all other except for 00-changelog.patch
+
+ -- Eduard Bloch <blade@debian.org>  Mon, 05 Oct 2015 20:20:36 +0200
+
+broadcom-sta (6.30.223.248-4) unstable; urgency=medium
+
+  * Adopting package after confirmation from maintainer, keeping Cyril
+    Lacoux as co-maintainer
+  * Added support for kernel 4.2 (0018-cfg80211_disconnected.patch, by Tim
+    Garnder / Canonical, closes: #796372)
+
+ -- Eduard Bloch <blade@debian.org>  Sat, 26 Sep 2015 12:26:59 +0200
+
+broadcom-sta (6.30.223.248-3.3) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Rebuild to include arch-indep packages
+
+ -- Eduard Bloch <blade@debian.org>  Sun, 10 May 2015 22:56:43 +0200
+
+broadcom-sta (6.30.223.248-3.2) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Added broadcom-sta-6.30.223.248-linux-3.18-null-pointer-crash.patch to
+    prevent potential problems with recent kernels (closes: #773713)
+
+ -- Eduard Bloch <blade@debian.org>  Wed, 06 May 2015 21:22:40 +0200
+
+broadcom-sta (6.30.223.248-3.1) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Added Canonical patches to support Linux kernel versions up to 4.0.0
+    (closes: #773713)
+  * Set some variables right for kernel-package/module-assistant usage, 
+    to build correctly against headers without having to boot that kernel
+
+ -- Eduard Bloch <blade@debian.org>  Wed, 29 Apr 2015 11:50:17 +0200
+
 broadcom-sta (6.30.223.248-3blankon2) tambora; urgency=medium
 
   * Added patch to support Linux 4.0
